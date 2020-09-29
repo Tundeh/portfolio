@@ -1,0 +1,103 @@
+.about {
+  position: relative;
+  display: flex;
+  padding-bottom: 4em;
+  background: linear-gradient(90deg, #960f78 60%, #ffffff 40%);
+  justify-content: center;
+  align-items: center;
+  user-select: auto;
+}
+.inner-content {
+  position: relative;
+  margin-top: 5em;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  padding: 0px 0px 0px 3rem;
+  > figure {
+    display: inline-block;
+    width: 4em;
+    padding: 0;
+  }
+  .intro {
+    display: inline-block;
+    flex-direction: column;
+    max-width: 40%;
+    > h1 {
+      color: #ccf381;
+      font-size: 4rem;
+      font-weight: 900;
+      //max-width: 30%;
+      line-height: 1.1;
+      font-family: "Cantarell";
+      > span {
+        color: #ffffff;
+      }
+    }
+    > p {
+      font-weight: normal;
+      color: #ffffff;
+      font-size: 1.4rem;
+      > span {
+        color: blue;
+        cursor: pointer;
+      }
+    }
+  }
+  .profile_design {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 40%;
+    .jamiu_pic {
+      display: inline-block;
+      background-image: url(../../assets/img/my.jpg);
+      width: 20em;
+      height: 20em;
+      background-size: cover;
+      border-radius: 4em;
+    }
+    > figure {
+      display: inline-flex;
+      right: 20px;
+      position: absolute;
+      bottom: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .about {
+    background-image: linear-gradient(180deg, #960f78 50%, #ffffff 50%);
+    //display: block;
+    height: 100%;
+    //justify-content: center;
+    .inner-content {
+      > figure {
+        display: none;
+        //position: absolute;
+        // rotate: 90deg;
+        //margin-left: 6em;
+      }
+
+      .intro {
+        display: flex;
+        max-width: 90%;
+      }
+    }
+
+    .profile_design {
+      margin-top: 20%;
+      display: inline-flex;
+      position: relative;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      .jamiu_pic {
+        position: relative;
+        margin-top: 100px;
+        box-shadow: blanchedalmond;
+      }
+    }
+  }
+}
