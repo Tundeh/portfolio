@@ -1,0 +1,26 @@
+.footer {
+  width: 100%;
+  min-height: 24rem;
+  background-color: #3d155f;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  .footer-links {
+    width: 60vw;
+    justify-content: space-around;
+    font-size: 2em;
+    display: flex;
+    margin-bottom: 5em;
+
+    > a {
+      color: #ffffff;
+      &:hover {
+        color: gold;
+      }
+    }
+  }
+  .copy {
+  }
+}

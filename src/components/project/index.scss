@@ -1,0 +1,58 @@
+.project {
+  color: #000000;
+  border-color: purple;
+  border-width: 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  //height: 15em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  &:hover {
+    //rotate: -5deg;
+    transform: scale(1.1) translateZ(0);
+  }
+  &__img {
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    > h4 {
+      margin: 0;
+    }
+
+    > p {
+      margin: 0;
+    }
+    > div {
+      position: relative;
+      margin-bottom: 1em;
+      button {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: mediumpurple;
+        border-radius: 5px;
+        position: absolute;
+        right: 0;
+      }
+      > span {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .project {
+  }
+}
