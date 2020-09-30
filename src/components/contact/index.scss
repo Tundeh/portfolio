@@ -158,11 +158,15 @@
         }
       }
       .contact__form {
+        .contact__message {
+          margin-top: 0;
+        }
         .name__email {
           .contact__name,
           .contact__email {
             display: block;
             width: 100%;
+            margin-bottom: 1em;
             > div {
               width: 100%;
             }
