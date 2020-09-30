@@ -9,6 +9,7 @@
   > h1 {
     color: #6b17e6;
   }
+
   &__slider {
     max-height: 80%;
     max-width: 90%;
@@ -49,6 +50,24 @@
       }
       &__core {
         border-right: 0.1em solid #6b17e6;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .technologies {
+    &__core,
+    &__other {
+      > ul {
+        list-style: none;
+        text-align: center;
+        > h2 {
+          color: #c1a3ee;
+        }
+        > li {
+          display: block;
+        }
       }
     }
   }

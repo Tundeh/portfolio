@@ -87,6 +87,7 @@ class Skills extends React.Component {
               <li>Sass</li>
               <li>Embeded Systems</li>
               <li>Figma</li>
+             
             </ul>
           </div>
         </div>
