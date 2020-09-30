@@ -15,7 +15,7 @@ const About = (props) => {
      <div className="inner-content">
         <div className="intro">
             <h1>Software <br></br>Engineer<span>.</span></h1>
-          <p>Hello! I'm Jamiu Tunde Suleiman a Software Engineer, skilled in designing, building and deployment of front end and backend of web applications <span  onClick={toggle}>more</span></p>
+          <p>Hello! I'm Jamiu Tunde Suleiman a Software Engineer, skilled in designing, building and deployment of front end and backend of web applications <span  onClick={toggle}>More</span></p>
         </div>
         <figure>
             <svg width="66" height="300" viewBox="0 0 66 448" fill="none" xmlns="http://www.w3.org/2000/svg">
