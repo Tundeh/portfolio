@@ -8,8 +8,8 @@ return(
     <div className="modal-overlay" onClick={handleClick}></div>
     <div className="modal-wrapper">
       <div className="header"><h1>Bio</h1>
-      <a href="!#" className="modal__button" onClick={handleClick}>
-        <span></span></a>
+      <span  className="modal__button" onClick={handleClick}>
+        <span></span></span>
       </div>
       <div className="modal-content">
       <div className="modal-intro">

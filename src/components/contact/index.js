@@ -14,7 +14,7 @@ class Contact extends React.Component {
     <div className="contact" id="contact">
       <h1>Let's Work Together</h1>
       <p>
-  {  }Think i'm qualified for a position <br></br> or you have a job for me? contact me!
+       Think i'm qualified for a position <br></br> or you have a job for me? contact me!
       </p>
       <div className="contact__inner">
         <form autoComplete="off" onSubmit={this.submitForm} className="contact__form" action="https://formspree.io/mzbkzdpz" method="POST">
