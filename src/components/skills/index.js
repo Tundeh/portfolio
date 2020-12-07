@@ -81,12 +81,15 @@ class Skills extends React.Component {
               <li>Node.js</li>
               <li>Express.js</li>
               <li>Mongodb</li>
+              <li>AWS</li>
               <li>Postgresql</li>
+              <li>C++</li>
             </ul>
           </div>
           <div className="technologies__other">
             <ul>
               <h2>Others</h2>
+              <li>SQL</li>
               <li>Typescript</li>
               <li>Next.js</li>
               <li>Python</li>
