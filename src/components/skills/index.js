@@ -11,6 +11,8 @@ import postgres from "../../assets/img/postgresql.svg";
 import mongodb from "../../assets/img/mongodb.svg";
 import css from "../../assets/img/css-3.svg";
 import git from "../../assets/img/git.svg";
+import cPlus from "../../assets/img/c.svg";
+import aws from "../../assets/img/aws-2.svg";
 
 class Skills extends React.Component {
   render() {
@@ -30,7 +32,7 @@ class Skills extends React.Component {
         <h1>Skills</h1>
         <div className="skills__slider">
           <Slider {...settings}>
-          <div className="skill_name">
+            <div className="skill_name">
               <img src={nodejs} alt="node.js" />
             </div>
 
@@ -61,14 +63,19 @@ class Skills extends React.Component {
             <div className="skill_name">
               <img src={git} alt="git" />
             </div>
+            <div className="skill_name">
+              <img src={aws} alt="aws" />
+            </div>
+            <div className="skill_name">
+              <img src={cPlus} alt="cplus" />
+            </div>
           </Slider>
         </div>
 
         <div className="technologies">
           <div className="technologies__core">
-            
             <ul>
-            <h2>Core Technologies</h2>
+              <h2>Core Technologies</h2>
               <li>Javascript</li>
               <li>React</li>
               <li>Node.js</li>
@@ -78,16 +85,14 @@ class Skills extends React.Component {
             </ul>
           </div>
           <div className="technologies__other">
-            
             <ul>
-            <h2>Others</h2>
+              <h2>Others</h2>
               <li>Typescript</li>
               <li>Next.js</li>
               <li>Python</li>
               <li>Sass</li>
               <li>Embeded Systems</li>
               <li>Figma</li>
-             
             </ul>
           </div>
         </div>
