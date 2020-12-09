@@ -1,6 +1,7 @@
 .navbar {
   width: 100%;
   height: 4em;
+  display: flex;
   .navbar-wrapper {
     display: flex;
     position: relative;
@@ -8,13 +9,14 @@
     height: 100%;
     background: #ffffff;
     align-items: center;
+    z-index: 1030;
     .navbar-logo {
       position: absolute;
       display: flex;
       color: #4831d4;
       border-radius: 10%;
       font-size: 2em;
-      font-weight: 800;
+      font-weight: 700;
       align-items: center;
       justify-content: center;
       left: 1em;
@@ -34,16 +36,111 @@
   }
 }
 
+.toolbar {
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
   .navbar {
     .navbar-wrapper {
-      justify-content: center;
+      padding-left: 0.5rem;
       align-items: center;
       .navbar-logo {
         position: static;
       }
       .navbar-links {
         display: none;
+      }
+    }
+  }
+  .toolbar {
+    position: absolute;
+    display: flex;
+    top: 4rem;
+    width: 100%;
+    // left: 1rem;
+    background: white;
+    z-index: 1024;
+    &.on {
+      transition: all ease-in-out 0.3s;
+      transform: translateY(0%);
+    }
+    &.off {
+      transition: all 0.3s ease-in-out;
+      transform: translateY(-100%);
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+      > li {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: #7365d3;
+        cursor: pointer;
+      }
+    }
+  }
+  .toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 4em;
+    position: absolute;
+    right: 10px;
+    padding: 0 10px;
+    transition: all 0.3s ease-in-out;
+
+    span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 2.8px;
+      background-color: #6b17e6;
+      transition: all 0.3s ease-in-out;
+      backface-visibility: hidden;
+      border-radius: 2px;
+
+      &:after,
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 2.8px;
+        background-color: #6b17e6;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 2px;
+      }
+
+      &:after {
+        top: 5px;
+        width: 70%;
+      }
+
+      &:before {
+        top: -5px;
+        width: 40%;
+      }
+    }
+
+    &.on {
+      span {
+        background-color: transparent;
+
+        &:after,
+        &:before {
+          height: 2px;
+          width: 100%;
+        }
+
+        &:before {
+          transform: rotate(45deg) translate(4px, 4px);
+        }
+
+        &:after {
+          transform: rotate(-45deg) translate(3px, -3px);
+        }
       }
     }
   }
