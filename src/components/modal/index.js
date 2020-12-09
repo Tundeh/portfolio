@@ -22,16 +22,16 @@ const Modal = ({ isShowing, handleClick }) => {
               </span>
             </h2>
             <p>
-              I'm a fullstack developer based in nigeria, I currently
-              specializes in using react, node.js and express.js as my primary
-              technology for building frontend and backend of web apps but am
-              able to hit the ground running if other technology is needed to
-              get the job done.
+              I'm a full-stack developer based in Nigeria. I currently
+              specialize in using react, node.js and express.js as my primary
+              technology for building frontend and backend of web apps but can
+              hit the ground running if other technologies are needed to get the
+              job done.
             </p>
 
             <p>
-              I'm equiped with the necessary tools to carry out backend or
-              frontend projects
+              I'm equipped with the necessary tools to carry out backend or
+              frontend project.
             </p>
             <p>
               Also, I possess a bachelors degree in computer engineering with
